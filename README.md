@@ -1,7 +1,7 @@
 # AtividadeDeLaboratorioVielTurma2
 
        CÓDIGO RECOMENDADO PELO PROFESSOR PARA ANÁLISE
-#contraste e brilho
+contraste e brilho
 img_in = cv2.imread('t1.jpg',0)
 #altere os valores tanto de a quanto de b
 
@@ -15,7 +15,7 @@ img_out = np.array(img_out, dtype = np.uint8)
 cv2_imshow(img_in)
 cv2_imshow(img_out)
 
-# O código acima é um código que tem como finalidade a mudança de contraste e brilho da imagem inicial inserida pelo professor.
+ O código acima é um código que tem como finalidade a mudança de contraste e brilho da imagem inicial inserida pelo professor.
 Explicando linha por linha o funcionamento do código temos que:
 
 1 - img_in = cv2.imread('t1.jpg',0) 
@@ -31,18 +31,18 @@ Explicando linha por linha o funcionamento do código temos que:
 4 - img_out = np.array(img_out, dtype = np.uint8)
 # "np.array() é o comando que cria um array utilizando a biblioteca numpy, que neste caso é abreviada como "np" por fins de facilidade de digitação e manipulação, porque "np" é muito mais fácil de se manipular do que "numpy".
 
-# "np.uint8" ou "numpy.unsignedinteger8" é uma forma padrão utilizada em arrays que representam imagens com três canais de cor e que tenham uma escala de cores em números integrais pequenos, de 0 a 255.
+ "np.uint8" ou "numpy.unsignedinteger8" é uma forma padrão utilizada em arrays que representam imagens com três canais de cor e que tenham uma escala de cores em números integrais pequenos, de 0 a 255.
 
-#"dtype" declara o tipo de dado que é desejado para ser utilizado na matriz. 
-#Neste caso dtype = np.uint8 declara que o tipo de dado é uint8, que como dito acima, é uma forma padrão para representar imagens de 3 canais e que sejam constituidas por integrais entre 0 e 255.
+"dtype" declara o tipo de dado que é desejado para ser utilizado na matriz. 
+Neste caso dtype = np.uint8 declara que o tipo de dado é uint8, que como dito acima, é uma forma padrão para representar imagens de 3 canais e que sejam constituidas por integrais entre 0 e 255.
 
-#img_out = np.array() salva os valores do array dentro da variável img_out.
+img_out = np.array() salva os valores do array dentro da variável img_out.
 
-#Utilizando todos os dados anteriores, podemos chegar a conclusão de que esta linha é responsável por usar o produto final da linha 3(img_out = a*img_in+b) para gerar uma matriz, depois salvar o valor dessa matriz dentro da variável img_out.
+Utilizando todos os dados anteriores, podemos chegar a conclusão de que esta linha é responsável por usar o produto final da linha 3(img_out = a*img_in+b) para gerar uma matriz, depois salvar o valor dessa matriz dentro da variável img_out.
 
 5 - cv2_imshow(img_in)
     cv2_imshow(img_out)
-#Por fim os comandos acima são responsáveis por fazer o output, ou printar para o usuário a imagem inicial antes das modificações, e a imagem final e modificada, para fins de comparação.
+Por fim os comandos acima são responsáveis por fazer o output, ou printar para o usuário a imagem inicial antes das modificações, e a imagem final e modificada, para fins de comparação.
 
 
                                                              
