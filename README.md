@@ -29,7 +29,13 @@ Explicando linha por linha o funcionamento do código temos que:
 # Neste caso temos a declaração de que img_out é igual a a*img_in+b. Ou seja, aqui há a primeira manipulação propriamente dita da imagem inicial, usando o valor a e b para fazer essa manipulação. No caso aqui há uma manipulação parcial, que só é completada com o comando de número 4.
 
 4 - img_out = np.array(img_out, dtype = np.uint8)
-# "np.array é o carray utilizando a biblioteca numpy, que neste caso é abreviada como "np" por fins de facilidade de digitação e manipulação, porque "np" é muito mais fácil de se manipular do que "numpy". 
+# "np.array() é o comando que cria um array utilizando a biblioteca numpy, que neste caso é abreviada como "np" por fins de facilidade de digitação e manipulação, porque "np" é muito mais fácil de se manipular do que "numpy".
+# "np.uint8" ou "numpy.unsignedinteger8" é uma forma padrão utilizada em arrays que representam imagens com três canais de cor e que tenham uma escala de cores em números integrais pequenos, de 0 a 255.
+#"dtype" declara o tipo de dado que é desejado para ser utilizado na matriz. 
+#Neste caso dtype = np.uint8 declara que o tipo de dado é uint8, que como dito acima, é uma forma padrão para representar um tipo especifico de imagem.
+
+
+
 
 
 
