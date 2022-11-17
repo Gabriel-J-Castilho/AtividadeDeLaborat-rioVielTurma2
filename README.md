@@ -1,6 +1,6 @@
 # AtividadeDeLaboratorioVielTurma2
 
-
+       CÓDIGO RECOMENDADO PELO PROFESSOR PARA ANÁLISE
 #contraste e brilho
 img_in = cv2.imread('t1.jpg',0)
 #altere os valores tanto de a quanto de b
@@ -30,24 +30,23 @@ Explicando linha por linha o funcionamento do código temos que:
 
 4 - img_out = np.array(img_out, dtype = np.uint8)
 # "np.array() é o comando que cria um array utilizando a biblioteca numpy, que neste caso é abreviada como "np" por fins de facilidade de digitação e manipulação, porque "np" é muito mais fácil de se manipular do que "numpy".
+
 # "np.uint8" ou "numpy.unsignedinteger8" é uma forma padrão utilizada em arrays que representam imagens com três canais de cor e que tenham uma escala de cores em números integrais pequenos, de 0 a 255.
+
 #"dtype" declara o tipo de dado que é desejado para ser utilizado na matriz. 
-#Neste caso dtype = np.uint8 declara que o tipo de dado é uint8, que como dito acima, é uma forma padrão para representar um tipo especifico de imagem.
+#Neste caso dtype = np.uint8 declara que o tipo de dado é uint8, que como dito acima, é uma forma padrão para representar imagens de 3 canais e que sejam constituidas por integrais entre 0 e 255.
+
+#img_out = np.array() salva os valores do array dentro da variável img_out.
+
+#Utilizando todos os dados anteriores, podemos chegar a conclusão de que esta linha é responsável por usar o produto final da linha 3(img_out = a*img_in+b) para gerar uma matriz, depois salvar o valor dessa matriz dentro da variável img_out.
+
+5 - cv2_imshow(img_in)
+    cv2_imshow(img_out)
+#Por fim os comandos acima são responsáveis por fazer o output, ou printar para o usuário a imagem inicial antes das modificações, e a imagem final e modificada, para fins de comparação.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+                                                             
+                                                              MORFOLOGIA E lÓGICA
 O conceito de morfologia na computação está principalmente relacionado ao processo de transformação de imagens por de transformações que são denominadas como transformações morfológicas.
 
 Visto que todas as imagens geradas por computadores e tenham como base os pixels são na realidade um conjunto de matrizes trabalhando juntas para criar essas imagens, a um nível computacional, ou seja, relativo à programação, lógica e software que processa alguma imagem. As transformações morfológicas são transformações pautadas na lógica computacional por meio da manipulação seletiva das matrizes que geram as imagens. Por exemplo, a erosão, que é considerada um dos métodos básicos de transformação morfológica, utiliza uma lógica bem simples, a partir de dois inputs, chamados de imagem original e kernel, que eu particularmente prefiro chamar de molde. Há uma comparação entre esses dois inputs, e se as mesmas posições do molde não estiverem de acordo na imagem original, essas posições são “erodidas” ou apagadas. Por exemplo, se a posição 50 da imagem original for igual a 1,  e todos os pixels abaixo do kernel, ou molde, for diferente de 1, na imagem final ou produto morfológico,  a posição 50 será igual a 0. Ocorrendo assim a perda de um pixel, nesse caso. O mesmo processo sendo aplicado a todas as posições e comparando as duas imagens de entrada representam esse processo morfológico que chamamos de “erosão”.
@@ -56,7 +55,3 @@ Um processo similar ocorre para outros morfológicos, por exemplo a dilatação 
 
 A erosão e a dilatação, apesar de serem as formas consideradas mais básicas da morfologia computacional, representam a base das transformações morfológicas, sendo a maioria das outras transformações morfológicas variantes dos processos de erosão e dilatação, em alguns casos inclusive fazendo uso das duas em conjunto.
 Então, os processos de morfologia são processos que fazem grande uso da lógica, mais especificamente da lógica booleana, e de operadores lógicos para tornar tudo isso possível. Além disso, a aplicabilidade da morfologia é muito grande, sendo algo muito utilizado por exemplo em filtros de imagens, mudanças de resolução, e até mesmo construção de imagens propriamente ditas. 
-
-
-
-
