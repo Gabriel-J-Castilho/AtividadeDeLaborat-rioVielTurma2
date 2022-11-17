@@ -14,6 +14,8 @@ img_out = np.array(img_out, dtype = np.uint8)
 
 cv2_imshow(img_in)
 cv2_imshow(img_out)
+ 
+ANÁLISE DO CÓDIGO DADO PELO PROFESSOR
 
  O código acima é um código que tem como finalidade a mudança de contraste e brilho da imagem inicial inserida pelo professor.
 Explicando linha por linha o funcionamento do código temos que:
