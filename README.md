@@ -19,17 +19,17 @@ cv2_imshow(img_out)
 Explicando linha por linha o funcionamento do código temos que:
 
 1 - img_in = cv2.imread('t1.jpg',0) 
-#Primeiro temos uma leitura e um salvamento de imagem. O caso cv2.imread('t1.jpg',0) que é uma leitura literal da imagem a partir dos arquivos disponíveis no computador. E o caso img_in = cv2.imread... que é responsável por salvar os dados da imagem lida pelo programa dentro da variável img_in para utilização posterior.
+Primeiro temos uma leitura e um salvamento de imagem. O caso cv2.imread('t1.jpg',0) que é uma leitura literal da imagem a partir dos arquivos disponíveis no computador. E o caso img_in = cv2.imread... que é responsável por salvar os dados da imagem lida pelo programa dentro da variável img_in para utilização posterior.
 
 2 - a = -1
     b =  1
-#São declarações dos valores das variáveis a e b. Que nesse caso foram declaradas dessa forma para facilitar qualquer mudança desejada pelo programador tanto no contraste quanto no brilho da imagem, facilitando bastante o processo de manipulação do estado final da imagem.
+São declarações dos valores das variáveis a e b. Que nesse caso foram declaradas dessa forma para facilitar qualquer mudança desejada pelo programador tanto no contraste quanto no brilho da imagem, facilitando bastante o processo de manipulação do estado final da imagem.
     
 3 - img_out = a*img_in + b
-# Neste caso temos a declaração de que img_out é igual a a*img_in+b. Ou seja, aqui há a primeira manipulação propriamente dita da imagem inicial, usando o valor a e b para fazer essa manipulação. No caso aqui há uma manipulação parcial, que só é completada com o comando de número 4.
+Neste caso temos a declaração de que img_out é igual a a*img_in+b. Ou seja, aqui há a primeira manipulação propriamente dita da imagem inicial, usando o valor a e b para fazer essa manipulação. No caso aqui há uma manipulação parcial, que só é completada com o comando de número 4.
 
 4 - img_out = np.array(img_out, dtype = np.uint8)
-# "np.array() é o comando que cria um array utilizando a biblioteca numpy, que neste caso é abreviada como "np" por fins de facilidade de digitação e manipulação, porque "np" é muito mais fácil de se manipular do que "numpy".
+"np.array() é o comando que cria um array utilizando a biblioteca numpy, que neste caso é abreviada como "np" por fins de facilidade de digitação e manipulação, porque "np" é muito mais fácil de se manipular do que "numpy".
 
  "np.uint8" ou "numpy.unsignedinteger8" é uma forma padrão utilizada em arrays que representam imagens com três canais de cor e que tenham uma escala de cores em números integrais pequenos, de 0 a 255.
 
