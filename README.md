@@ -28,7 +28,9 @@ Explicando linha por linha o funcionamento do código temos que:
 3 - img_out = a*img_in + b
 # Neste caso temos a declaração de que img_out é igual a a*img_in+b. Ou seja, aqui há a primeira manipulação propriamente dita da imagem inicial, usando o valor a e b para fazer essa manipulação. No caso aqui há uma manipulação parcial, que só é completada com o comando de número 4.
 
-4 - img_out = np
+4 - img_out = np.array(img_out, dtype = np.uint8)
+# "np.array é o carray utilizando a biblioteca numpy, que neste caso é abreviada como "np" por fins de facilidade de digitação e manipulação, porque "np" é muito mais fácil de se manipular do que "numpy". 
+
 
 
 
